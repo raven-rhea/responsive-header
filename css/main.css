@@ -1,0 +1,100 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+  margin:0 ;
+  padding: 0;
+  background-color: #18294f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  padding-top: .5em;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #6c8fe0;
+  white-space: nowrap;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+
+}
+
+li {
+  color: #6c8fe0;
+  padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  li {
+    width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .75rem;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  li {
+    width: auto;
+    padding-right: 1em;
+    padding-top: .5em;
+  }
+
+}
